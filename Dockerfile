@@ -1,4 +1,4 @@
-FROM dockerfile/java:oracle-java-7
+FROM java/7-jdk
 
 MAINTAINER João Fidalgo <joao.fidalgo@outlook.com>
 
