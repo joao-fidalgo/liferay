@@ -1,4 +1,4 @@
-FROM java:7-jdk
+FROM java:7
 
 MAINTAINER João Fidalgo <joao.fidalgo@outlook.com>
 
