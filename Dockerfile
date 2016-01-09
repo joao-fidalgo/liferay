@@ -8,8 +8,8 @@ RUN curl -O -s -k -L -C - http://downloads.sourceforge.net/project/lportal/Lifer
 
 RUN /bin/echo -e '\nCATALINA_OPTS="$CATALINA_OPTS -Dexternal-properties=portal-db.properties"' >> /opt/liferay-portal-6.2-ce-ga4/tomcat-7.0.42/bin/setenv.sh
 
-ADD portal-bundle.properties /opt/liferay-portal-6.2-ce-ga4/portal-bundle.properties
-ADD portal-db.properties     /opt/liferay-portal-6.2-ce-ga4/portal-db.properties
+ADD ./config/portal-bundle.properties /opt/liferay-portal-6.2-ce-ga4/portal-bundle.properties
+ADD ./config/portal-db.properties     /opt/liferay-portal-6.2-ce-ga4/portal-db.properties
 
 VOLUME /var/liferay
 
