@@ -1,0 +1,15 @@
+db:
+  image: mysql:5.5
+  environment:
+    MYSQL_ROOT_PASSWORD: "root"
+    MYSQL_DATABASE: "lportal"
+    MYSQL_USER: "lportal"
+    MYSQL_PASSWORD: "lportal"
+  ports:
+    - "3306:3306"
+liferay:
+  image: joaofidalgo/liferay:6.2-ce-ga4
+  links:
+    - db
+  ports:
+    - "8080:8080"

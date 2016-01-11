@@ -19,5 +19,5 @@ ONBUILD ADD  ./deploy   /var/liferay/deploy
 ONBUILD ADD  ./lib      /var/liferay/lib
 ONBUILD COPY ./bin/*.sh /var/liferay/bin
 
-ENTRYPOINT ["/opt/liferay-portal-6.2-ce-ga4/tomcat-7.0.42/bin/catalina.sh"]
 CMD ["run"]
+ENTRYPOINT ["/opt/liferay-portal-6.2-ce-ga4/tomcat-7.0.42/bin/catalina.sh"]
