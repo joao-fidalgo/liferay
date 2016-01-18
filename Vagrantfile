@@ -6,11 +6,11 @@ Vagrant.configure("2") do |config|
   $cpus   = 2
   $memory = 2048
 
-  if Vagrant.has_plugin?("vagrant-proxyconf")
-    config.proxy.http     = "http://10.0.32.6:8080"
-    config.proxy.https    = "http://10.0.32.6:8080"
-    config.proxy.no_proxy = "localhost,127.0.0.1"
-  end
+  # if Vagrant.has_plugin?("vagrant-proxyconf")
+    # config.proxy.http     = "http://proxy.example.com:8080"
+    # config.proxy.https    = "http://proxy.example.com:8080"
+    # config.proxy.no_proxy = "localhost,127.0.0.1,.example.com"
+  # end
 
   config.vm.box = "ubuntu/trusty64"
 
