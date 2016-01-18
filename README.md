@@ -24,7 +24,8 @@ This is the repository for docker joaofidalgo/liferay automated builds
 ## I'm behind a corporate proxy
  1. Install [vagrant-proxyconf](https://github.com/tmatilai/vagrant-proxyconf "vagrant-proxyconf") plugin
  2. Change the Vagrantfile accordingly
-  ```ruby
+
+```ruby
   Vagrant.configure("2") do |config|
     if Vagrant.has_plugin?("vagrant-proxyconf")
       config.proxy.http     = "http://proxy.example.com:8080"
@@ -33,4 +34,4 @@ This is the repository for docker joaofidalgo/liferay automated builds
     end
     # ...
   end
-  ```
+```
