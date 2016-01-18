@@ -3,15 +3,8 @@
 
 Vagrant.configure("2") do |config|
 
-  # Minimum requirements for development
   $cpus   = 2
   $memory = 2048
-
-  # if Vagrant.has_plugin?("vagrant-proxyconf")
-  #   config.proxy.http    = "http://proxy:80/"
-  #   config.proxy.https   = "http://proxy:80/"
-  #   config.proxy.noproxy = "localhost,127.0.0.1"
-  # end
 
   config.vm.box = "ubuntu/trusty64"
 
@@ -25,5 +18,5 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.provision :docker
-  config.vm.provision :docker_compose, rebuild: true, run: "always", yml: "/vagrant/docker-compose.yml"
+  config.vm.provision :docker_compose, rebuild: true, run: "always", yml: "docker-compose.yml"
 end

@@ -8,7 +8,7 @@ db:
   ports:
     - "3306:3306"
 liferay:
-  image: joaofidalgo/liferay:6.2-ce-ga4
+  image: joaofidalgo/liferay:6.2-ce-ga6
   links:
     - db
   ports:
