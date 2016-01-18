@@ -9,9 +9,12 @@ docker-compose up
 vagrant up
 ###In case you're behind a corporate proxy
 1. Install [vagrant-proxyconf](http://tmatilai.github.io/vagrant-proxyconf/ "vagrant-proxyconf")
+
    vagrant plugin install vagrant-proxyconf
+
 2. Change the Vagrantfile
-   ```ruby
+
+```ruby
 Vagrant.configure("2") do |config|
   if Vagrant.has_plugin?("vagrant-proxyconf")
     config.proxy.http     = "http://proxy.example.com:8080"
@@ -21,5 +24,7 @@ Vagrant.configure("2") do |config|
   # ... other stuff
 end
 ```
+
 3. Spin up the VM
+
    vagrant up
