@@ -6,9 +6,10 @@ docker run -it -p 8080:8080 joaofidalgo/liferay:6.2-ce-ga6
 ## Using [docker-compose](https://www.docker.com/docker-compose/ "docker-compose")
 docker-compose up
 ## Using [vagrant](https://www.vagrantup.com "vagrant")
-vagrant up
+1. Install [vagrant-docker-compose](https://github.com/leighmcculloch/vagrant-docker-compose "vagrant-docker-compose") plugin
+2. vagrant up
 ### In case you're behind a corporate proxy
-1. Install [vagrant-proxyconf](http://tmatilai.github.io/vagrant-proxyconf/ "vagrant-proxyconf") plugin
+1. Install [vagrant-proxyconf](https://github.com/tmatilai/vagrant-proxyconf "vagrant-proxyconf") plugin
 2. Change the Vagrantfile
 ```ruby
 Vagrant.configure("2") do |config|

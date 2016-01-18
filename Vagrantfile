@@ -18,5 +18,5 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.provision :docker
-  config.vm.provision :docker_compose, rebuild: true, run: "always", yml: "docker-compose.yml"
+  config.vm.provision :docker_compose, rebuild: true, run: "always", yml: "/docker-compose.yml"
 end
