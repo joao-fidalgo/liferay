@@ -24,7 +24,3 @@ Vagrant.configure("2") do |config|
   # ... other stuff
 end
 ```
-
-3. Spin up the VM
-
-   vagrant up
